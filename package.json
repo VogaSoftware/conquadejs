@@ -1,9 +1,10 @@
 {
   "name": "conquade",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "init": "set DEBUG=conquade:* && set PORT=8080 && node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
