@@ -1,22 +1,54 @@
 {
   "name": "conquadejs",
-  "discrption": "A expressjs web server that caters to older technology.",
-  "version": "0.0.0",
+  "description": "The expressjs server for older technology",
+  "version": "1.44.2",
   "private": false,
-  "scripts": {
-    "inix": "node ./bin/www",
-    "win_inix": "start conquade.bat",
-    "lunix_inix": "xdg-open conquade.sh",
-    "darwin_inix": "open conquade.sh",
-    "start": "set DEBUG=conquade:* && set PORT=8080 && node ./bin/www"
-  },
+  "keywords": [
+    "web server",
+    "expressjs",
+    "html",
+    "pug",
+    "jade"
+  ],
+  "contributors": [
+    {
+      "name": "Jimmy",
+      "email": "jimmy@thisguydoesnotexist.com",
+      "web": "http://foo.bar.com/"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "Voga Software",
+      "email": "",
+      "web": "http://voga2.jimdo.com"
+    },
+    {
+      "name": "Graham Dianaty",
+      "email": "gmdianaty@gmail.com",
+      "web": "http://about.me/grahamdianaty"
+    }
+  ],
+  "demos": [
+    "conquadejs.html"
+  ],
   "dependencies": {
-    "body-parser": "~1.13.2",
-    "cookie-parser": "~1.3.5",
-    "debug": "~2.2.0",
-    "express": "~4.13.1",
-    "jade": "~1.11.0",
-    "morgan": "~1.6.1",
-    "serve-favicon": "~2.3.0"
-  }
+    "body-parser": "~1.13.2"
+  },
+  "bugs": {
+    "web": "https://github.com/VogaSoftware/conquadejs/issues"
+  },
+  "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/VogaSoftware/conquadejs.git"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "MIT",
+      "url": "https://github.com/VogaSoftware/conquadejs/blob/master/DOCS/LISENCE.MD"
+    }
+  ],
+  "homepage": "http://www.conquade.ga/"
 }
