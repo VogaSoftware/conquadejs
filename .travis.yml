@@ -1,0 +1,26 @@
+os:
+  - windows
+  - linux
+  - osx
+sudo: false
+language: cpp
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-4.8
+env:
+  matrix:
+  - TRAVIS_NODE_VERSION="0.8"
+  - TRAVIS_NODE_VERSION="0.10"
+  - TRAVIS_NODE_VERSION="0.12"
+  - TRAVIS_NODE_VERSION="4"
+  - TRAVIS_NODE_VERSION="5"
+  - TRAVIS_NODE_VERSION="6"
+notifications:
+  email:
+    - gmdianaty@gmail.com
+install:
+  - npm/.bin/npm install
+script: node_modules/.bin/tap --gc test/js/*-test.js
