@@ -3,6 +3,14 @@
   "description": "The expressjs server for older technology",
   "version": "1.44.2",
   "private": false,
+  "scripts": {
+    "inix": "node ./bin/www",
+    "win_inix": "start conquade.bat",
+    "lunix_inix": "xdg-open conquade.sh",
+    "darwin_inix": "open conquade.sh",
+    "start": "set DEBUG=conquade:* && set PORT=80 && node ./bin/www",
+  },
+
   "keywords": [
     "web server",
     "expressjs",
