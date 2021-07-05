@@ -1,0 +1,19 @@
+{
+  "name": "yeck-site",
+  "description": "This is a test site",
+  "scripts": {
+    "postdeploy": "npm start"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
